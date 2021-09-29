@@ -5,7 +5,7 @@ footer {
 
 .footer__container {
     content: "";
-    background-image: url("/images-2/footerbgmobile.jpg");
+    background-image: url("../images-2/footerbgmobile.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ footer {
 
     @include breakpoint-up(medium) {
         content: "";
-        background-image: url("/images-2/footerbg.jpg");
+        background-image: url("../images-2/footerbg.jpg");
         height: 45.625rem;
     }
 
