@@ -425,7 +425,7 @@ p {
   right: 2.5rem;
   z-index: 4;
 }
-.nav__toggle .burgerBtn {
+.burgerBtn {
   display: block;
   content: "";
   height: 2.1875rem;
@@ -435,7 +435,7 @@ p {
   border: transparent;
   transition: all 200ms ease-in-out;
 }
-.nav__toggle .burgerBtn--active {
+.burgerBtn--active {
   display: block;
   content: "";
   width: 2.1875rem;
