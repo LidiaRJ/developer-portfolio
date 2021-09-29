@@ -1,0 +1,245 @@
+.testimonial { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 1.25rem;
+    background-color: hsla(0, 0%, 95%, 0.4);
+
+    @include breakpoint-up(large){ 
+        padding-bottom: 3.5rem;
+        height: 56.25rem; //900px
+    }
+
+    &__title {
+        margin: 3.75rem auto 0 auto;
+
+        @include breakpoint-up(large) {
+            margin-top: 5rem;
+        }
+
+        h2 {
+            margin: 0.8rem auto 2.5rem auto;
+            
+            @include breakpoint-up(large) {
+                margin-top: 1.375rem
+            }
+        }
+
+        .testimonial-p {
+            color: $yellow;
+            font-weight: 600;
+            margin-bottom: 0;
+
+            @include breakpoint-up(large) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__container {
+        display: block;
+        margin: 0 auto;
+
+        @include breakpoint-up(medium) {
+            position: relative;
+        }
+
+        @include breakpoint-up(large) {
+            position: relative;
+            display: flex;
+            gap: 20%;
+            z-index: 1;
+            top: 2.5rem;
+            left: -6.25rem;
+        }
+     
+        .testimonial__box {
+            margin: 0 auto 7rem auto;
+            background-color: none;
+
+            @include breakpoint-up(medium) {
+                background-color: white;
+                height: 22rem;
+                box-shadow: 1.1875rem 0.9375rem 0px hsla(26, 91%, 70%, .2);
+            }
+ 
+            @include breakpoint-up(large) {
+                margin-bottom: 4rem;
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+            .buble__shadow {
+
+                @include breakpoint-up(large) {
+                    display: block;
+                    content: "";
+                    position: relative;
+                    width: 26.0625rem;
+                    height: 18.875rem;
+                    top: 0.8rem;
+                    left: 2.0625rem;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 60% 85%, 50% 100%, 40% 85%, 0% 85%);
+                    background-color: hsla(26, 91%, 70%, .2);
+                    margin-bottom: 2.5rem;
+                    z-index: 1;
+                }
+            }
+
+            .buble__img {
+                display: none;
+
+                &::before {
+
+                    @include breakpoint-up(large) {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 26.625rem;
+                    height: 19.2rem;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 60% 85%, 50% 100%, 40% 85%, 0% 85%);
+                    top: 0.125rem;
+                    left: 0.125rem;
+                    background: white;
+                    box-shadow: 0.125rem 0.25rem 0.75rem hsla(0, 0%, 0%, 0.466);
+                    z-index: 3;
+                    }  
+                }
+
+                @include breakpoint-up(large) {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 26.875rem;
+                    height: 19.5rem;
+                    top: -0.9rem;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 60% 85%, 50% 100%, 40% 85%, 0% 85%);
+                    background-color: $orange;
+                    box-shadow: 0.75rem 0.875rem 1.375rem hsla(0, 0%, 0%, 0.466);
+                    z-index: 2;
+                } 
+            }
+
+            .testimonial__text {
+                padding: 0 2.5rem;
+                top: -1.25rem;
+                z-index: 2;
+                font-size: 0.85rem;
+                line-height: 1.5rem;
+                height: 15.625rem;
+               
+                @include breakpoint-up(medium) {
+                    width: 30rem;
+                    height: 11rem;
+                }
+
+                @include breakpoint-up(large) {
+                    position: absolute;
+                    padding: 0 2.5rem;
+                    z-index: 2;
+                    width: 26rem;
+                    top: 0;
+                    margin: 0.625rem auto;
+                }
+
+                p {
+                    text-align: justify;
+                    margin: -0.50rem auto 0 auto;
+                    font-style: italic;
+
+                    @include breakpoint-up(large) {
+                        width: 25.625rem;
+                        padding: 0 2.5rem;
+                        position: absolute;
+                        top: 2.5rem;
+                        left: 0.625rem;
+                    }
+                }
+               
+            }
+
+            .quotation {
+                text-align: center;
+                font-size: 4rem;
+                color: $orange;
+                margin: 0 auto;
+
+                @include breakpoint-up(medium) {
+                    background-color: white;
+                    padding: 0 13.9rem 0 14.5rem;
+                    margin-left: -2.5625rem;
+                }
+
+                @include breakpoint-up(large) {
+                    background-color: transparent;
+                    position: absolute;
+                    top: 1rem;
+                    left: 47%;
+                    font-size: 5rem;
+                    margin-left: 0;
+                    padding: 0;
+                }
+                
+            }
+            
+        }
+
+        .testimonial___clients {
+            display: block;   
+
+            @include breakpoint-up(large) {
+                display: flex;
+                flex-direction: row;
+                gap: 1.25rem;
+                text-align: left;
+                transform: translate(0.4375rem, -2.5625rem);
+            }
+
+            a, a:visited {
+                color: black;
+            }
+        }
+
+        .client-1 {
+            margin-top: 2rem;
+        }
+
+        .testimonial__photo {
+            width: 3.125rem;
+            height: 3.125rem;
+            border-radius: 50%;
+            box-shadow: 2px 2px 7px rgba(71, 40, 17, 0.35);
+        }
+
+        .clients__text {
+            
+            h5 {
+                margin: 0.625rem auto 0.3125rem auto;
+                font-size: 0.85rem;
+                color: black;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+
+            p {
+                margin: 0 auto 0.625rem auto;
+                font-size: 0.65rem;
+                color: $grey;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+
+        
+    }
+    
+}
+
+
+

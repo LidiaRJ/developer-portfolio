@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+
+    <link rel="stylesheet" href="./app/scss/style.css">
+</head>
+<body>
+    <!--HEADER-->
+        <div class="overlay has-fade"></div>
+
+        <nav class="nav__about">
+            <div class="nav__toggle"> <!--hide for desktop breakpoint-->
+                <button type="button" class="burgerBtn"></button>
+            </div>
+    
+            <div class="nav__links has-fade">
+                <ul>
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./index.html#projects">Projects</a>
+                        <a href="./contactme.html">Contact</a>
+                </ul>
+            </div>
+    
+            <div class="nav__desktop">
+                <a href="./index.html"><img src="./images/logo.png" class="logo" alt="logo"></a>
+                    <ul>
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./index.html#projects">Projects</a>
+                        <a href="./contactme.html">Contact</a>
+                </ul>
+            </div>
+        </nav>
+
+    
+    <!--MAIN SECTION-->
+    <section class="main__about" id="toggle-content">
+        <!--<div class="main__bg"></div>-->
+
+        <div class="main__col1">
+            <div class="about__text">
+                <h1>A bit more about <span class="yellow-letter">Me:</span></h1>
+                <p>Coming from the audiovisual communication field, I discovered 
+                    a passion for grahpic and UI  design, and a true love for coding.  
+                    I enjoy building projects from sratch,  one block of code at a time. 
+                </p>
+                <p>I value simple and minimalistic structures  with clean design patterns 
+                    and cohesive branding style, built with thoughtful interactions.
+                </p>
+                <p>
+                    This portfolio showcases all the skills I’ve taught myselft this past 
+                    year to build this website from the ground up, from wireframe design, 
+                    iterations and prototype to the final code.
+                </p>
+            </div>
+    
+            <a href="mailto:lidia.rj10@gmail.com" class="cta-black">Let's talk</a>
+    
+            <div class="social__media">
+                <a href="https://www.linkedin.com/in/lidiarjimeno/" class="social-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0036 0C18.6283 0 24.0072 5.37174 24.0072 12.0036C24.0072 18.6283 18.6355 24.0072 12.0036 24.0072C5.37894 24.0072 0 18.6355 0 12.0036C0 5.37894 5.37174 0 12.0036 0ZM10.4554 9.62016H12.9181V10.8803H12.9541C13.2997 10.261 14.135 9.62016 15.3879 9.62016C17.9874 9.62016 18.4698 11.2403 18.4698 13.3429V17.6346H15.8992V13.8326C15.8992 12.9253 15.8776 11.7588 14.5599 11.7588C13.2205 11.7588 13.0189 12.7453 13.0189 13.7678V17.6346H10.4482V9.62016H10.4554ZM8.67687 7.39514C8.67687 8.12961 8.07921 8.73447 7.33753 8.73447C6.60306 8.73447 5.9982 8.13681 5.9982 7.39514C5.9982 6.66067 6.59586 6.05581 7.33753 6.05581C8.07201 6.05581 8.67687 6.65347 8.67687 7.39514ZM6.0054 9.62016H8.67687V17.6346H6.0054V9.62016Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></a>
+                <a href="https://github.com/LidiaRJ" class="social-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9996 0.298987C5.37349 0.298987 0 5.67157 0 12.2985C0 17.6007 3.43793 22.0972 8.20598 23.6846C8.80613 23.7958 9.0267 23.4237 9.0267 23.1066C9.0267 22.8205 9.01474 21.8753 9.00986 20.8734C5.67116 21.5994 4.96736 19.4569 4.96736 19.4569C4.42166 18.0697 3.63503 17.7008 3.63503 17.7008C2.54632 16.9553 3.71786 16.9717 3.71786 16.9717C4.92259 17.0559 5.55686 18.2075 5.55686 18.2075C6.62786 20.0421 8.36497 19.511 9.04928 19.2049C9.15735 18.4294 9.4674 17.8996 9.81109 17.5998C7.14559 17.2973 4.3437 16.2679 4.3437 11.6695C4.3437 10.3598 4.8132 9.28886 5.57989 8.44905C5.45501 8.14612 5.04398 6.92632 5.6955 5.27377C5.6955 5.27377 6.70312 4.9509 8.99659 6.50377C9.95329 6.23846 10.9795 6.1047 11.9987 6.10027C13.0187 6.1047 14.0467 6.23801 15.0048 6.50377C17.2951 4.9518 18.3018 5.27377 18.3018 5.27377C18.9543 6.92677 18.545 8.14744 18.4201 8.44909C19.1895 9.28886 19.655 10.3598 19.655 11.6695C19.655 16.2786 16.8469 17.2919 14.1756 17.5891C14.6061 17.9612 14.9906 18.6916 14.9906 19.8104C14.9906 21.4151 14.9769 22.7084 14.9769 23.103C14.9769 23.4224 15.193 23.7958 15.8016 23.6788C20.5669 22.0905 24.0005 17.5935 24.0005 12.2945C24.0005 5.66842 18.6279 0.294937 12.0005 0.294937L11.9996 0.29895L11.9996 0.298987Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
+                <a href="https://www.behance.net/Lidiarjimeno" class="social-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0036 0C18.6283 0 24.0072 5.37174 24.0072 12.0036C24.0072 18.6283 18.6355 24.0072 12.0036 24.0072C5.37894 24.0072 0 18.6355 0 12.0036C0 5.37894 5.37174 0 12.0036 0ZM9.06571 7.62556C9.47615 7.62556 9.85059 7.66157 10.189 7.73357C10.5275 7.80558 10.8155 7.92799 11.0603 8.08641C11.2979 8.25203 11.4851 8.46805 11.622 8.74168C11.7516 9.0081 11.8164 9.35374 11.8164 9.74978C11.8164 10.1818 11.7156 10.5419 11.5212 10.8371C11.3195 11.1251 11.0315 11.3627 10.6427 11.55C11.1755 11.7012 11.5644 11.9676 11.8236 12.3492C12.0828 12.7309 12.2124 13.1917 12.2124 13.7318C12.2124 14.171 12.126 14.5455 11.9604 14.8623C11.7876 15.1791 11.5644 15.4383 11.2835 15.64C11.0027 15.8416 10.6715 15.9928 10.3042 16.0864C9.9442 16.18 9.56976 16.2304 9.18092 16.2304H5.0117V7.63276H9.06571V7.62556ZM14.135 8.31683H17.6202V9.16652H14.135V8.31683ZM14.9127 14.7255C15.1719 14.9775 15.5392 15.0999 16.0216 15.0999C16.3672 15.0999 16.6697 15.0135 16.9145 14.8407C17.1593 14.6679 17.3105 14.4806 17.3681 14.2862H18.8731C18.6283 15.0351 18.261 15.568 17.7642 15.892C17.2673 16.216 16.6625 16.3744 15.964 16.3744C15.4743 16.3744 15.0351 16.2952 14.6391 16.1368C14.243 15.9784 13.9118 15.7552 13.631 15.4671C13.3573 15.1791 13.1485 14.8335 12.9973 14.4302C12.8533 14.027 12.7741 13.5806 12.7741 13.1053C12.7741 12.6373 12.8533 12.2052 13.0045 11.802C13.1629 11.3987 13.3717 11.0531 13.6598 10.7579C13.9406 10.4626 14.279 10.2322 14.6679 10.0666C15.0567 9.89379 15.4888 9.81458 15.9712 9.81458C16.4969 9.81458 16.9577 9.91539 17.3537 10.1242C17.7498 10.3258 18.0738 10.6067 18.3258 10.9523C18.5779 11.2979 18.7579 11.694 18.8731 12.1332C18.9883 12.5725 19.0243 13.0333 18.9955 13.523H14.5023C14.5023 14.0126 14.6679 14.4806 14.9271 14.7255H14.9127ZM16.8785 11.4563C16.6769 11.2331 16.3312 11.1107 15.9136 11.1107C15.64 11.1107 15.4167 11.1539 15.2367 11.2475C15.0567 11.3411 14.9127 11.4563 14.8047 11.5932C14.6967 11.73 14.6175 11.874 14.5743 12.0324C14.5311 12.1836 14.5023 12.3204 14.4951 12.4428H17.2817C17.2385 12.0036 17.0873 11.6868 16.8857 11.4563H16.8785ZM8.82808 11.0963C9.16652 11.0963 9.44014 11.0171 9.66337 10.8587C9.87939 10.7003 9.9874 10.441 9.9874 10.081C9.9874 9.87939 9.9514 9.71377 9.87939 9.58416C9.80738 9.45455 9.70657 9.35374 9.58416 9.28173C9.46175 9.20972 9.32493 9.15932 9.16652 9.13051C9.0081 9.10171 8.84969 9.08731 8.68407 9.08731H6.91269V11.0963H8.82808ZM8.92889 14.7543C9.11611 14.7543 9.28893 14.7399 9.45455 14.6967C9.62736 14.6607 9.77138 14.6031 9.90099 14.5167C10.0234 14.4302 10.1314 14.3222 10.2106 14.171C10.2898 14.027 10.3258 13.8398 10.3258 13.6166C10.3258 13.1773 10.2034 12.8605 9.9514 12.6661C9.70657 12.4788 9.37534 12.3852 8.9649 12.3852H6.91269V14.7543H8.93609V14.7615L8.92889 14.7543Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></a>
+                <a href="https://twitter.com/JimenoLidia" class="social-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0036 0C18.6283 0 24.0072 5.37174 24.0072 12.0036C24.0072 18.6283 18.6355 24.0072 12.0036 24.0072C5.37894 24.0072 0 18.6355 0 12.0036C0 5.37894 5.37174 0 12.0036 0ZM18.4843 7.9784C18.009 8.19442 17.4978 8.33123 16.9577 8.39604C17.505 8.06481 17.9298 7.54636 18.1242 6.92709C17.613 7.22952 17.0369 7.45275 16.4392 7.57516C15.9496 7.05671 15.2655 6.73987 14.4951 6.73987C13.0261 6.73987 11.838 7.92799 11.838 9.39694C11.838 9.60576 11.8596 9.80738 11.9028 10.0018C9.69217 9.88659 7.73357 8.83528 6.42304 7.22232C6.18542 7.62556 6.06301 8.08641 6.06301 8.56166C6.06301 9.48335 6.53105 10.297 7.24393 10.7723C6.80468 10.7579 6.40144 10.6355 6.0414 10.441V10.477C6.0414 11.766 6.9559 12.8389 8.17282 13.0837C7.9496 13.1413 7.71197 13.1773 7.47435 13.1773C7.30153 13.1773 7.13591 13.1629 6.9703 13.1269C7.30873 14.1854 8.28803 14.9487 9.45455 14.9775C8.54005 15.6904 7.40234 16.1152 6.14942 16.1152C5.93339 16.1152 5.72457 16.1008 5.51575 16.0792C6.69667 16.8353 8.09361 17.2745 9.59136 17.2745C14.4806 17.2745 17.1593 13.2205 17.1593 9.70657C17.1593 9.59136 17.1593 9.47615 17.1521 9.36094C17.6706 8.9865 18.1242 8.51845 18.477 7.9856L18.4843 7.9784Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></a>
+            </div>
+        </div>
+
+        <!--COLUMN 2-->
+        <div class="main__col2">
+
+            <!--Box 1 - Dev tools-->
+            <div class="tools__box">
+                <h3>Dev Tools</h3>
+                <ul class="tools_list">
+                    <li>Codepen</li>
+                    <li>Github</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+
+            <!--Box 1 - Dev tools-->
+            <div class="tools__box">
+                <h3>Design Tools</h3>
+                <ul class="tools_list">
+                    <li>Figma</li>
+                    <li>Balsamiq</li>
+                    <li>Zeplin</li>
+                    <li>Wix Editor X</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+-
+<!--PROCESS CONTAINER-->
+    <section class="process__container">
+        <div class="process__title">
+            <p>What is my approach</p>
+            <h1>A <span class="yellow-letter">simplified</span> process</h1>
+        </div>
+
+        <div class="process__content">
+            <div class="process__box">
+                <img src="./images/research-icon.svg" alt="research icon">
+                <h3>01 Research</h3>
+                <p>Understanding the client’s pain points and requirements 
+                    is the first step of my process.
+                </p>
+            </div>
+
+            <span class="horizontal__line"></span>
+
+            <div class="process__box">
+                <img src="./images/design-icon.svg" alt="design icon">
+                <h3>02 Research</h3>
+                <p>My goal is not just to achieve a pretty design but a 
+                    functional and intuitive layout  based on research insights.
+                </p>
+            </div>
+
+            <span class="horizontal__line"></span>
+
+            <div class="process__box">
+                <img src="./images/development-icon.svg" alt="development icon">
+                <h3>03 Development</h3>
+                <p>I use the final design as the building blocks of my code to 
+                    ensure a smooth user experience across all devices. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="about__footer">
+        <ul class="about-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./index.html#projects">Projects</a>
+            <a href="./contactme.html">Contact</a>
+        </ul>
+        <p class="rights">© 2021 Lidia Jimeno. All rights reserved</p>
+    </footer>
+
+    <script src="./app/js/script.js"></script>
+</body>
+</html>

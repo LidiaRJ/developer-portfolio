@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Quantico:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: $black;
+
+    &.noScroll {
+        overflow: hidden;
+    }
+    
+}
+
+//Links
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+//Toggle button for nav links 
+.show-links {
+    height: 33.125rem;
+}
+
+.hide-for-mobile {
+    display: none;
+
+    @include breakpoint-up(large) {
+        display: inherit;
+    }
+}
+
+.hide-content {
+    display: none;
+}
+
+//Buttons
+//Black buttons
+.cta-black {
+    border: none;
+    padding: 0.7rem;
+    width: 9.375rem;
+    border-radius: 3.125rem;
+    font-size: $small-font;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+
+    @include breakpoint-up(large) {
+        border: none;
+        padding: 0.55rem 1.5rem;
+        width: 10rem;
+        border-radius: 3.125rem;
+        font-size: $med-font;
+        font-weight: 600;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+            color: $pink;
+        }
+    }
+    
+}
+
+//Clear buttons
+.cta-clear {
+    border: 3px solid black;
+    padding: 0.7rem;
+    width: 9.375rem;
+    border-radius: 3.125rem;
+    font-size: $small-font;
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+
+    @include breakpoint-up(large) {
+        border: 2px solid black;
+        padding: 0.7rem;
+        width: 10rem;
+        border-radius: 3.125rem;
+        font-size: $med-font;
+        font-weight: 700;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid white;
+            color: white;
+        }
+    }
+    
+}
+
+
+//Mobile cta - Project & About sections
+.cta__middle {
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 1.875rem;
+    width: 10.25rem;
+    margin: 0.5rem auto  1rem auto;
+    cursor: pointer;
+
+
+    @include breakpoint-up(large) {
+        padding: 0.35rem ;
+        width: 9rem;
+    }
+    
+}
+
+//Social Media icons - General
+.social__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+
+    @include breakpoint-up(large) {
+        margin-top: 1.875rem;
+        margin-left: 3%;
+    }
+
+    a.social-icon {
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    
+}
+
+
+
+//Fonts
+h1 {
+    font-size: 1.8rem;;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-family: $quantico;
+
+    @include breakpoint-up(large) {
+        font-size: 2.3rem;
+    }
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.yellow-letter {
+    color: $yellow;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+//Icons 
+.dots__icon {
+    height: 1rem;
+    width: auto;
+}
+     

@@ -1,0 +1,455 @@
+ 
+//***NAV BAR***//
+.nav__contactme {
+    padding: 2.5rem;
+    margin-bottom: 1.875rem;
+    background: white;
+    
+    @include breakpoint-up(large) {
+        background-color: white;
+        width: 31.25rem;
+        height: 4rem;
+        padding: 0;
+        margin: 0 auto;
+    }   
+    
+    &__toggle {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        right: 2.5rem;
+        z-index: 4;
+        
+
+       .burgerBtn {
+            display: block;
+            content: "";
+            height: 2.1875rem;
+            width: 2.1875rem;
+            background: url("/images/burger-menu.svg") no-repeat;
+            background-size: contain;
+            border: transparent;
+            transition: all 200ms ease-in-out;
+
+            &--active {
+                display: block;
+                content: "";
+                width: 2.1875rem;
+                height: 2.1875rem;
+                background: url("/images/close-hamburger.svg") no-repeat;
+                background-size: cover;
+                background-color: transparent;
+                border: transparent;
+            }
+        }
+
+        @include breakpoint-up(large) {
+            display: none;
+        }
+    }
+
+    &__links {
+        position: absolute;
+        width: 100vw;
+        height: 33.125rem;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-top: 7.5rem;
+        transition: color 300ms ease-in-out;
+        z-index: 3;
+        
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+            line-height: 2.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.125rem;
+            
+
+            @include breakpoint-up(medium) {
+                font-weight: 600;
+                font-size: 1.3rem;
+                line-height: 3rem;
+                padding-top: 2rem;
+            }
+
+            a, a:visited {
+                color: $brown;
+            }
+        }
+    }
+
+    &__desktop {
+        display: none;
+
+        @include breakpoint-up(large) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .homelink {
+            width: 40px;
+            height: 40px;  
+        }
+
+        
+
+        ul {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-left: 0.9375rem;
+            
+            
+            a{
+                position: relative;
+                font-size: 0.7rem;
+                font-weight: 600;
+                color: $brown;
+                padding: 0.9375rem;
+    
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 0.125rem;
+                    width: 1.875rem;
+                    right: 0;
+                    left: 30%;
+                    bottom: 0.3125rem;
+                    background: $yellow-pink-gradient;
+                    opacity: 0;
+                    transition: all 200ms ease-in-out;
+                }
+        
+                &:hover {
+                    color: $orange;
+        
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+
+//***MAIN CONTENT***//
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+    }
+
+    @include breakpoint-up(x-large) {
+        height: 46.875rem;
+    }
+}
+
+//---Background---// 
+.background {
+    display: none;
+
+    @include breakpoint-up(large) {
+        display: block;
+        position: absolute;
+        top: -4.5rem;
+        right: 0;
+        width: 40%;
+        height: 51.25rem;
+        z-index: 1;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    @include breakpoint-up(xx-large) {
+        width: 35%;
+        height: 50rem;
+        overflow: hidden;
+
+        img {
+           transform: translateX(5px);
+        }
+    } 
+}
+
+//---Text container---// 
+.text__container {
+    margin: 6.25rem auto 2.5rem auto;
+    padding: 0 3.75rem;
+
+    @include breakpoint-up(medium) {
+        margin-top: 10rem;
+        padding: 0 7.5rem;
+    }
+
+    @include breakpoint-up(large) {
+        margin: 5.5rem 0 2.5rem 0;
+        padding: 2.5rem 3.75rem;
+        width: 45%;
+        padding: 0% 5% 10% 15%;
+        text-align: left;
+    }
+
+    h1 {
+
+        @include breakpoint-up(large) {
+            margin-top: 0;
+        }
+    }
+}
+
+//***DESKTOP REACHOUT***//
+.desktop__reachout {
+    display: none;
+
+    @include breakpoint-up(large) {
+        display: block;
+        margin-bottom: 1.25rem;
+    }
+    
+    
+    .email__button a{
+        color: $brown;
+        font-weight: 800;
+        
+
+        &:hover {
+            color: $yellow;
+        }
+        
+    }
+}
+
+//***Social media Desktop***//
+.desktop__social {
+    display: none;
+
+    @include breakpoint-up(medium) {
+        display: block;
+    }
+
+    @include breakpoint-up(large) {
+        display: block;
+    }
+}
+.desktop__social a:hover {
+    svg path {
+        fill: $yellow;
+    }
+}
+
+//---FORM CONTAINER---// 
+.form__div {
+
+    @include breakpoint-up(large) {
+        position: absolute;
+        right: 2rem;
+        width: 55%;
+        z-index: 3;
+    }
+
+    @include breakpoint-up(x-large) {
+        right: 8rem;
+    }
+    
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $yellow;
+    padding: 1.5625rem 1.25rem;
+    border-radius: 0.625rem;
+    margin: 0.3125rem auto 3.75rem auto;
+    width: 20rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    
+
+    @include breakpoint-up(large) {
+        width: 31.25rem;
+        margin: 0rem auto;
+    }
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 1.25rem;
+    border: none;
+    margin: 0.5rem auto;
+    resize: vertical; 
+    outline: transparent;
+}
+
+.nameEmail__inputs {
+    display: flex;
+    gap: 0.625rem;
+}
+
+button[type=submit] {
+    cursor: pointer;
+}
+
+//***MOBILE REACHOUT***//
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto 6.25rem auto;
+}
+.mobile__reachout {
+    padding: 0 3.75rem 3.75rem 3.75rem;
+
+    @include breakpoint-up(medium) {
+        padding: 0 7.5rem;
+    }
+    
+    @include breakpoint-up(large) {
+        display: none;
+    }
+
+    .email__button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .email__button  a{
+        color: $brown;
+        font-weight: 800;
+        padding-bottom: 0.625rem;   
+    }
+
+    .yellow-line {
+        display: inline-block;
+        width: 6.25rem;
+        height: 0.1875rem;
+        background: $yellow;
+    }
+}
+
+//***CONTACT FOOTER***//
+.contactme__footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: -21.875rem;
+    background-color: $yellow;
+    color: #f8a96d;
+    width: 100%;
+    height: 10.375rem;
+    padding: 3.125rem;
+    font-size: 0.65rem;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 9.375rem;
+    }
+
+    @include breakpoint-up(large) {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        bottom: -12.5rem;
+        padding: 3.125rem 5rem;
+        font-size: 0.8rem;
+        z-index: 4;
+    }
+
+    @include breakpoint-up(x-large) {
+        bottom: -15rem;
+    }
+
+    .social__contact {
+        display: flex;
+        padding-top: 1.25rem;
+        margin: 2.5rem auto 0 auto;
+        
+        @include breakpoint-up(medium) {
+            display: none;
+        }
+    }
+
+    ul.menu-links {
+        display: flex;
+        margin: 2.5rem 0 1rem 0;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+        @include breakpoint-up(medium) {
+            margin: 0;
+        }
+
+        @include breakpoint-up(large) {
+            margin-top: 0;
+        }
+        
+
+        a {
+            color: white;
+            font-size: 0.8rem;
+            padding-right: 0.625rem;
+
+            &:nth-child(4) {
+                padding-right: 0;
+            }
+
+            &:hover {
+                color: hsl(0, 45%, 51%);
+            }
+        }
+    }
+}
+
+.rights__contactme {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: white;
+    font-size: 0.8rem;
+
+    @include breakpoint-up(medium) {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+

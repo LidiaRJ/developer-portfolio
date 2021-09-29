@@ -1,0 +1,18 @@
+@import "mixins";
+@import "variables";
+@import "globals";
+@import "animations";
+
+//Homepage
+@import "header";
+@import "nav-main";
+@import "main";
+@import "projects";
+@import "testimonials";
+@import "footer";
+
+//Secondary Pages
+@import "contactme";
+@import "about-page";
+@import "secondary-footer";
+@import "thankyou-page";

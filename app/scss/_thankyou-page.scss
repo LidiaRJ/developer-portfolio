@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__thankyou {
+    background: $yellow-pink-gradient;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.8;
+    padding: 5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__thankyou {
+    margin: 1rem auto 2rem auto;
+
+    @include breakpoint-up(large) {
+        margin: 0 auto 6.25rem auto;
+    }
+    
+}
+.main__text {
+    margin: 3.75rem auto 1.875rem auto;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 0.9375rem;
+    }
+
+    p {
+        color: $brown;
+        font-weight: 400;
+        margin-top: 0;
+    }
+}
+
+.cta__button {
+    position: relative;
+    text-align: center;
+
+    a, a:visited {
+        color: white;
+        font-weight: 600;
+        font-size: 1.12rem;
+    }
+
+    .yellow-line {
+        position: absolute;
+        width: 5rem;
+        height: 0.1875rem;
+        background-color: $yellow;
+        top: 2.5rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    } 
+}
+
+.logo {
+    margin: 4.375rem auto 1.25rem auto;
+
+    @include breakpoint-up(large) {
+        margin: 8rem auto 1.25rem auto;
+    }
+    
+}
+
+.rights {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    width: 15.625rem;
+}
+
