@@ -430,7 +430,7 @@ p {
   content: "";
   height: 2.1875rem;
   width: 2.1875rem;
-  background: url("/images/burger-menu.svg") no-repeat;
+  background: url("../images/burger-menu.svg") no-repeat;
   background-size: contain;
   border: transparent;
   transition: all 200ms ease-in-out;
@@ -440,7 +440,7 @@ p {
   content: "";
   width: 2.1875rem;
   height: 2.1875rem;
-  background: url("/images/close-hamburger.svg") no-repeat;
+  background: url("../images/close-hamburger.svg") no-repeat;
   background-size: cover;
   background-color: transparent;
   border: transparent;
@@ -1528,7 +1528,7 @@ footer {
 
 .footer__container {
   content: "";
-  background-image: url("/images-2/footerbgmobile.jpg");
+  background-image: url("../images-2/footerbgmobile.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1542,7 +1542,7 @@ footer {
 @media (min-width: 40em) {
   .footer__container {
     content: "";
-    background-image: url("/images-2/footerbg.jpg");
+    background-image: url("../images-2/footerbg.jpg");
     height: 45.625rem;
   }
 }
@@ -1664,7 +1664,7 @@ footer {
   content: "";
   height: 2.1875rem;
   width: 2.1875rem;
-  background: url("/images/burger-menu.svg") no-repeat;
+  background: url("../images/burger-menu.svg") no-repeat;
   background-size: contain;
   border: transparent;
   transition: all 200ms ease-in-out;
@@ -1674,7 +1674,7 @@ footer {
   content: "";
   width: 2.1875rem;
   height: 2.1875rem;
-  background: url("/images/close-hamburger.svg") no-repeat;
+  background: url("../images/close-hamburger.svg") no-repeat;
   background-size: cover;
   background-color: transparent;
   border: transparent;
